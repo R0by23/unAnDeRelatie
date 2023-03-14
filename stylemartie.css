@@ -1,0 +1,196 @@
+@keyframes martie {
+  0% {
+    background: #200122;
+  }
+
+  50% {
+    background: #6f0000;
+  }
+
+  100% {
+    background: #200122;
+  }
+}
+
+@keyframes slideright {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+body {
+  animation: martie 10s infinite, slideright 3s forwards;
+  text-align: center;
+  font-family: "Happy Monkey", cursive;
+  color: #ffff;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-shadow: 0px 0px 2px black;
+}
+
+.gift-section {
+  margin-top: 50px;
+}
+
+.gift-title {
+  margin-bottom: 10px;
+}
+
+.gift-img {
+  margin: 20px auto;
+  max-width: 500px;
+  height: 800px;
+  box-shadow: 0px 0px 80px black;
+  border-radius: 10px;
+  background-image: url("imagini/img9.png");
+  background-size: cover;
+  transition: 2s;
+}
+
+.gift-img2 {
+  margin: 20px auto;
+  max-width: 400px;
+  height: 800px;
+  box-shadow: 0px 0px 80px black;
+  border-radius: 10px;
+  background-image: url("imagini/img10.png");
+  background-size: cover;
+  transition: 2s;
+}
+
+.gift-img3 {
+  margin: 20px auto;
+  max-width: 540px;
+  height: 550px;
+  box-shadow: 0px 0px 80px black;
+  border-radius: 10px;
+  background-image: url("imagini/img11.png");
+  background-size: cover;
+  transition: 2s;
+}
+
+.gift-img4 {
+  margin: 20px auto;
+  max-width: 500px;
+  height: 800px;
+  box-shadow: 0px 0px 80px black;
+  border-radius: 10px;
+  background-image: url("imagini/img10.png");
+  background-size: cover;
+  transition: 2s;
+}
+
+#img1:hover {
+  background-image: url("imagini/img5.png");
+  max-width: 500px;
+  height: 800px;
+  transform: rotate(380deg);
+}
+
+#img2:hover {
+  background-image: url("imagini/img1.png");
+  max-width: 500px;
+  height: 800px;
+  transform: rotate(340deg);
+}
+
+#video1:hover {
+  background-image: url("imagini/video1.gif");
+  max-width: 500px;
+  height: 800px;
+  transform: rotate(380deg);
+}
+
+#img3:hover {
+  background-image: url("imagini/img8.png");
+  max-width: 500px;
+  height: 800px;
+  transform: rotate(340deg);
+}
+
+#img4:hover {
+  background-image: url("imagini/img7.png");
+  max-width: 500px;
+  height: 800px;
+  transform: rotate(380deg);
+}
+
+#img5:hover {
+  background-image: url("imagini/img3.png");
+  max-width: 500px;
+  height: 800px;
+  transform: rotate(340deg);
+}
+
+#img6:hover {
+  background-image: url("imagini/img2.png");
+  max-width: 500px;
+  height: 500px;
+  transform: rotate(380deg);
+}
+
+#img7:hover {
+  background-image: url("imagini/img6.png");
+  max-width: 800px;
+  height: 450px;
+  transform: rotate(340deg);
+}
+
+#btn {
+  display: inline-block;
+  width: 200px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-align: center;
+  margin: 100px;
+  background: none;
+  text-shadow: 0px 0px 1px black;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(8, 8, 13);
+}
+
+#btn span {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+#btn span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#btn:hover span {
+  padding-right: 25px;
+}
+
+#btn:hover span::after {
+  opacity: 1;
+  right: 0;
+}

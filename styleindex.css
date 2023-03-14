@@ -1,0 +1,47 @@
+@keyframes martie {
+  0% {
+    background: #200122;
+  }
+
+  50% {
+    background: #6f0000;
+  }
+
+  100% {
+    background: #200122;
+  }
+}
+
+@keyframes slideright {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+body {
+  animation: martie 10s infinite, slideright 3s forwards;
+}
+
+.gift-section {
+  margin-top: 200px;
+}
+
+.gift-img {
+  margin: 20px auto;
+  max-width: 650px;
+  height: 500px;
+  box-shadow: 0px 0px 80px black;
+  border-radius: 10px;
+  background-image: url("imagini/giftbox.gif");
+  background-size: cover;
+  transition: 2s;
+}
+
+#img2:hover {
+  background-image: url("imagini/order.png");
+  max-width: 1170px;
+  height: 500px;
+}
